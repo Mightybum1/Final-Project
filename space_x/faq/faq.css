@@ -1,0 +1,136 @@
+/* General reset */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2D383A;
+}
+
+/* Navbar styles */
+.navbar {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px;
+  margin: 0 20px;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-btn {
+  background-color: #49546d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #2f3646;
+}
+
+/* Main content styles */
+.content {
+  margin: 80px 20px 20px;
+  color: #fff;
+  line-height: 1.6;
+}
+
+h2 {
+  color: #fff;
+  margin-top: 20px;
+}
+
+button.accordion {
+  background-color: #49546d;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  margin: 5px 0;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button.accordion:hover,
+button.accordion.active {
+  background-color: #2f3646;
+}
+
+div.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #333;
+  color: #fff;
+  margin: 5px 0;
+  border-radius: 5px;
+  line-height: 1.6;
+}
+
+div.panel p {
+  margin: 10px 0;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #444;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #f1c40f;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-note p {
+  font-size: 12px;
+  margin: 0;
+}
